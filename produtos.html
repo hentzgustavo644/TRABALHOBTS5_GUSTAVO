@@ -13,17 +13,17 @@
 
 <!-- NAVBAR + DROPDOWN: barra cinza bg-secondary que vira menu hambúrguer no celular navbar-expand-sm -->
 <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-warning" href="index.html">Hentz Eletrônicos</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
+  <div class="container-fluid"> <!-- 100% da largura da janela  -->
+    <a class="navbar-brand text-warning" href="index.html">Hentz Eletrônicos</a> <!-- navbar-brand = marca da barra de navegação -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"> 
+      <span class="navbar-toggler-icon"></span> <!-- navbar-toggler = botão do menu hambúrguer, navbar-toggler-icon = ícone do menu hambúrguer -->
     </button>
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="index.html">Página Inicial</a></li>
         <!-- dropdown: menu suspenso de "Produtos" -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Produtos</a>
+        <li class="nav-item dropdown"> <!-- nav-item = item do menu, dropdown = menu suspenso -->
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Produtos</a> 
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="produtos.html">Notebooks</a></li>
             <li><a class="dropdown-item" href="produtos.html">Teclados</a></li>
@@ -40,14 +40,14 @@
   <h1>Produtos</h1>
   <!-- CARDS: cada produto é um card com imagem (card-img-top), título, texto, preço e botão -->
   <div class="row">
-    <div class="col-sm-4 mt-3">
-      <div class="card bg-secondary text-white">
-        <img class="card-img-top" src="imagens/notebook.jpg" alt="Notebook Gamer Nitro V15" style="height:220px; object-fit:contain;">
-        <div class="card-body">
-          <h5 class="card-title">Notebook Gamer Nitro V15</h5>
-          <p class="card-text">Intel Core i7, 16GB RAM, SSD 512GB</p>
-          <p class="fw-bold text-warning">R$ 6.148,92</p>
-          <a href="contato.html" class="btn btn-warning">Comprar</a>
+    <div class="col-sm-4 mt-3"> <!-- col-sm-4 = 3 colunas em telas pequenas, mt-3 = margem superior -->
+      <div class="card bg-secondary text-white"><!-- card = cartão, bg-secondary = fundo cinza, text-white = texto branco -->
+        <img class="card-img-top" src="imagens/notebook.jpg" alt="Notebook Gamer Nitro V15" style="height:220px; object-fit:contain;"> <!-- card-img-top = imagem do card, style = altura fixa e ajuste da imagem -->
+        <div class="card-body"><!-- card-body = corpo do card -->
+          <h5 class="card-title">Notebook Gamer Nitro V15</h5><!-- card-title = título do card -->
+          <p class="card-text">Intel Core i7, 16GB RAM, SSD 512GB</p><!-- card-text = texto do card -->
+          <p class="fw-bold text-warning">R$ 6.148,92</p><!-- fw-bold = texto em negrito, text-warning = texto amarelo -->
+          <a href="contato.html" class="btn btn-warning">Comprar</a><!-- btn = botão, btn-warning = botão amarelo -->
         </div>
       </div>
     </div>
